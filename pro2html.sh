@@ -64,5 +64,5 @@ echo "make html Toc Contens..."
 perl htmlscripts/HtmlHeadingsToTableOfContents.pl $out 2>/dev/null
 
 echo 'add button "返回顶部"'
-sed -i '/<\/head>/i<style type="text/css">\n\t#floater{\n\t\tword-break:break-all;\n\t\tposition:fixed;\n\t\tfont-size:20%;\n\t\t_position:absolute;\n\t\tright:20px;\n\t\tbottom:20px;\n\t\tbackground:white;\n\t}\n </style>' $out 
+sed -i '/<\/head>/i<style type="text/css">\n\t#floater{\n\t\tword-break:break-all;\n\t\tposition:fixed;\n\t\tfont-size:100%;\n\t\t_position:absolute;\n\t\tright:220px;\n\t\tbottom:20px;\n\t\tbackground:white;\n\t}\n </style>' $out 
 sed -i '/<body>/a<div>\n <a name="top"> \n<h1 id="floater"><a href="#header">^返回顶部<\/a><\/h1>\n <\/div>\n <A NAME="header"><\/A>\n' $out
